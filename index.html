@@ -103,7 +103,7 @@
 
         .hero {
             text-align: center;
-            background:  linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://raw.githubusercontent.com/sipsizzle601/sip-and-sizzle/main/image_6bc57e51.jpg') no-repeat center center/cover;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://raw.githubusercontent.com/sipsizzle601/sip-and-sizzle/main/image_6bc57e51.jpg') no-repeat center center/cover;
             color: white;
             padding: 100px 20px;
             border-radius: 8px;
@@ -224,8 +224,13 @@
             padding: 40px;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-            max-width: 600px;
+            width: 100%;
             margin: 0 auto;
+        }
+
+        .booking-form iframe {
+            width: 100%;
+            border: none;
         }
 
         .form-group {
@@ -303,7 +308,7 @@
         <div class="logo-container">
             <img src="https://raw.githubusercontent.com/sipsizzle601/sip-and-sizzle/main/Sip%20%26%20Sizzle%20logo.jpg" alt="Sip & Sizzle LLC Logo">
         </div>
-        <p>Mississippi Hot Dogs & Fresh-Squeezed Lemonades</p>
+        <p>Mississippi's Best Gourmet Hot Dogs & Fresh-Squeezed Lemonades</p>
     </header>
 
     <nav>
@@ -453,46 +458,16 @@
 
         <section id="booking">
             <h2>Book Us For Your Next Event</h2>
-            <form class="booking-form">
-                <div class="form-group">
-                    <label for="name">Your Name *</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="email">Email Address *</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="phone">Phone Number *</label>
-                    <input type="tel" id="phone" name="phone" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="event-date">Event Date *</label>
-                    <input type="date" id="event-date" name="event-date" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="guests">Number of Guests *</label>
-                    <input type="number" id="guests" name="guests" min="1" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="message">Tell Us About Your Event *</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                </div>
-
-                <button type="submit" class="submit-btn">Request Catering Quote</button>
-            </form>
+            <div class="booking-form">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdVws93VAcLCRnwwNBZZjmsIzj06Z7FRVLbGnk6zT_JEgR5ow/viewform?embedded=true" width="640" height="1096" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            </div>
         </section>
     </div>
 
     <footer>
-        <p>&copy; 2026 Sip & Sizzle LLC. All rights reserved. | Mississippi Gourmet Hot Dogs & Fresh Lemonades</p>
+        <p>&copy; 2026 Sip & Sizzle LLC. All rights reserved. | Mississippi's Best Gourmet Hot Dogs & Fresh Lemonades</p>
         <p>Made with ❤️ for the people of Mississippi</p>
     </footer>
 
 </body>
-  </html>
+</html>
